@@ -162,7 +162,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     public void Buscar(View v) {
         int select = spn.getSelectedItemPosition();
-        Toast.makeText(this, "Buscando " + select + " en el mapa", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Buscando " + spn.getSelectedItem().toString() + " en el mapa", Toast.LENGTH_SHORT).show();
 
         switch (select) {
             case 0:
