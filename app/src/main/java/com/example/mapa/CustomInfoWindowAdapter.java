@@ -12,7 +12,7 @@ public class CustomInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
 
     private Activity context;
 
-    public CustomInfoWindowAdapter(Activity context){
+    public CustomInfoWindowAdapter(Activity context) {
         this.context = context;
     }
 
@@ -29,7 +29,18 @@ public class CustomInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
         TextView tvTitle = (TextView) view.findViewById(R.id.tv_title);
         TextView tvSubTitle = (TextView) view.findViewById(R.id.tv_subtitle);
 
-        img.setImageResource(R.drawable.homeaddress50px);
+        switch (marker.getId()) {
+            case "m0":
+                img.setImageResource(R.drawable.m0);
+                break;
+            case "m1":
+                img.setImageResource(R.drawable.m1);
+                break;
+            case "m2":
+                img.setImageResource(R.drawable.m2);
+                break;
+        }
+
         tvTitle.setText(marker.getTitle());
         tvSubTitle.setText(marker.getSnippet());
 

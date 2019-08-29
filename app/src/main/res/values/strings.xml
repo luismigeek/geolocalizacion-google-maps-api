@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">mapa</string>
     <string name="title_activity_maps">mapa</string>
+    <string name="search">Buscar</string>
+    <string-array name="immovables">
+        <item>APARTAESTUDIO, CASTELLANA.</item>
+        <item>CASA, URB. MONTEVERDE </item>
+        <item>CASA 1 URB. VALLEJO II</item>
+    </string-array>
+
 </resources>
